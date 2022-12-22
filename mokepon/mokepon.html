@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>MOKEPON!</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="seleccionar-mascota">
+            <h1>MOKEPON! 🔥💧🌱</h1>
+            <h2>Elige tu mascota..</h2>
+            
+            <div class="tarjetas">     
+                    <label class='tarjeta-mokepon' for="hipodoge">
+                        <p>Hipodoge</p>
+                        <img src="/assets/mokepons_mokepon_hipodoge_attack.webp" alt="  Hipodoge">
+                    </label>
+                    <input type="radio" name="mascota" id="hipodoge" />
+                    
+                    <label class='tarjeta-mokepon' for="capipepo">
+                        <p>Capipepo</p>
+                        <img src="/assets/mokepons_mokepon_capipepo_attack.png" alt="Capipeoo">
+                    </label>
+                    <input type="radio" name="mascota" id="capipepo" />
+                    
+                    <label class='tarjeta-mokepon' for="ratigueya">
+                        <p>Ratigueya</p>
+                        <img src="/assets/mokepons_mokepon_ratigueya_attack.png" alt="Ratigueya">
+                    </label>
+                    <input type="radio" name="mascota" id="ratigueya" />
+            </div>
+
+            <button id="boton-mascota">SELECCIONAR</button>
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h2>Elige tu ataque:</h2>
+
+            <p class="vidas-mascota">Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+            <p class="vidas-mascota">Las mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
+
+            <p>
+                <button id="boton-fuego">Fuego 🔥</button>
+                <button id="boton-agua">Agua 💧</button>
+                <button id="boton-tierra">Tierra 🌱</button>
+            </p>
+        </section>
+
+        <section id="mensajes">
+            
+        </section>
+
+        <section id="reiniciar">
+            <button id="boton-reiniciar">Reiniciar</button>
+        </section>
+    </body>
+    <script src="/mokepon/js/mokepon.js"></script>
+</html>
